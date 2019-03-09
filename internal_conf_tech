@@ -1,0 +1,30 @@
+docsis> listDocsisModules
+ 
+DOCSIS Modules List:
+ 
+[ 0] INIT:              Enabled  |      [ 1] PROVISIONING:      Enabled
+[ 2] BPI:               Enabled  |      [ 3] SNMP:              Enabled
+[ 4] SWDL:              Enabled  |      [ 5] CVC_VERIFY:        Enabled
+[ 6] CFG_PARSER:        Enabled  |      [ 7] DCC:               Enabled
+[ 8] CHM:               Enabled  |      [ 9] DMD:               Enabled
+[10] DMG:               Enabled  |      [11] RCCDB:             Enabled
+[12] CHDB_TX:           Enabled  |      [13] TCC_PARSER:        Enabled
+[14] EVENT_MGR:         Enabled  |      [15] REGISTRATION:      Enabled
+[16] FLTR_CLASS:        Enabled  |      [17] HAL:               Enabled
+[18] DS:                Enabled  |      [19] SME:               Enabled
+[20] UCD:               Enabled  |      [21] US:                Enabled
+[22] NVRAM_DB:          Enabled  |      [23] IPP:               Enabled
+[24] QOS:               Enabled  |      [25] PROD_DB:           Enabled
+[26] REINIT_MAC:        Enabled  |      [27] DSID:              Enabled
+[28] UTILS:             Enabled  |      [29] CMSTATUS:          Enabled
+[30] CMCONTROL:         Enabled  |      [31] MDD:               Enabled
+[32] FREQ_SCAN:         Enabled  |      [33] LEDD:              Enabled
+[34] DOCSIF:            Enabled  |      [35] MNGT_FLOW:         Enabled
+[36] CHDB:              Enabled  |      [37] SYSCFG_DB:         Enabled
+[38] DOCSISCFG_DB:      Enabled  |      [39] CHDB_RX:           Enabled
+[40] DBC:               Enabled  |      [41] DPV:               Enabled
+[42] QOSDBC:            Enabled  |      [43] UPCM:              Enabled
+[44] CHDB_RCP:          Enabled  |      [45] DOCSIS_PP:         Enabled
+[46] HAL_UCD:           Enabled  |      [47] HAL_RNG:           Enabled
+[48] HAL_PHY:           Enabled  |      [49] L2VPN:             Enabled
+[50] ESAFE:             Enabled  |      [51] HAL_TUNER:         Enabled
