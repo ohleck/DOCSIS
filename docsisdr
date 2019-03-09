@@ -1,0 +1,11 @@
+--------------------------------
+DOCSIS / SDR LAB ISP
+3.1 signal configurations
+
+    2x OFDM up to 192 MHz
+    2x OFDMA up to 96 MHz
+    SC-QAM
+    Modulations up to 4096 QAM
+    1x USRP b210 up to 54 MHz
+    
+--------------------------------
