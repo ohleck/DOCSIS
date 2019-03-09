@@ -1,0 +1,627 @@
+Using DOCSIS Initialization process parameters: -ds_channels 4 -us_channels 4
+pcd: Starting TI Process Control Daemon.
+pcd: Loaded 52 rules.
+pcd: Initialization complete.
+pcd: Starting process /usr/sbin/watchdog_rt (Rule SYSTEM_WATCHDOG).
+pcd: Starting process /usr/sbin/gptimer (Rule SYSTEM_GPTIMER).
+pcd: Starting process /usr/sbin/gim (Rule SYSTEM_GIM).
+pcd: Rule SYSTEM_WATCHDOG: Success (Process /usr/sbin/watchdog_rt (160)).
+pcd: Rule SYSTEM_GPTIMER: Success (Process /usr/sbin/gptimer (161)).
+pcd: Rule SYSTEM_GIM: Success (Process /usr/sbin/gim (162)).
+pcd: Rule SYSTEM_LASTRULE: Success.
+pcd: Starting process echo (Rule DOCSIS_APPRUN).
+pcd: Rule DOCSIS_APPRUN: Success (Process echo (164)).
+pcd: Starting process /usr/sbin/docsis_init_once (Rule DOCSIS_INITONCE).
+pcd: Setting low priority for softirq-net-rx task.
+ProductionDb_Init:1397 (pid=165): Restoring production DB from NVRAM ... SUCCESS
+ProductionDb_FrequencyPlanValidity:1922 (pid=165): 
+
+
+#####################################
+#####################################
+# Frequency plan: North American    #
+#####################################
+#####################################
+
+
+
+DOCSIS_ESAFE_GetNetDevEsafeName:1145 (pid=165): Cannot read file: /proc/net/dbrctl/esafe_config
+NvramDb_Init:793 (pid=165): Restoring NVRAM DB from NVRAM ... SUCCESS
+MotorolaNvramDb_Init:938 (pid=165): Restoring motorola NVRAM DB from NVRAM ... SUCCESS
+MotorolaPlatformDb_Init:627 (pid=165): Restoring motorola platform DB from NVRAM ... SUCCESS
+MotorolaCmRuntimeDb_Init:193 (pid=165): Restoring motorola CM Runtime DB from NVRAM ... SUCCESS
+qos_intDb_ResetTaDbRow:144 (pid=165): qos_intDb_ResetTaDbRow:  DSX TA entry removal. DB Index = 0, TA ID = 0x0.
+qos_intDb_ResetTaDbRow:144 (pid=165): qos_intDb_ResetTaDbRow:  DSX TA entry removal. DB Index = 1, TA ID = 0x0.
+qos_intDb_ResetTaDbRow:144 (pid=165): qos_intDb_ResetTaDbRow:  DSX TA entry removal. DB Index = 2, TA ID = 0x0.
+qos_intDb_ResetTaDbRow:144 (pid=165): qos_intDb_ResetTaDbRow:  DSX TA entry removal. DB Index = 3, TA ID = 0x0.
+qos_intDb_ResetTaDbRow:144 (pid=165): qos_intDb_ResetTaDbRow:  DSX TA entry removal. DB Index = 4, TA ID = 0x0.
+qos_intDb_ResetTaDbRow:144 (pid=165): qos_intDb_ResetTaDbRow:  DSX TA entry removal. DB Index = 5, TA ID = 0x0.
+qos_intDb_ResetTaDbRow:144 (pid=165): qos_intDb_ResetTaDbRow:  DSX TA entry removal. DB Index = 6, TA ID = 0x0.
+qos_intDb_ResetTaDbRow:144 (pid=165): qos_intDb_ResetTaDbRow:  DSX TA entry removal. DB Index = 7, TA ID = 0x0.
+qos_intDb_ResetTaDbRow:144 (pid=165): qos_intDb_ResetTaDbRow:  DSX TA entry removal. DB Index = 8, TA ID = 0x0.
+qos_intDb_ResetTaDbRow:144 (pid=165): qos_intDb_ResetTaDbRow:  DSX TA entry removal. DB Index = 9, TA ID = 0x0.
+main:682 (pid=165): Using MAC address 00:00:00:00:00:00
+CHDB_Rx_initDefaultRcps:736 (pid=165): Docsis module [1] -> rcpIndex [1]
+CHDB_Rx_initDefaultRcps:770 (pid=165): Docsis channel ID[1] -> rcpIndex [1]
+CHDB_Rx_initDefaultRcps:770 (pid=165): Docsis channel ID[2] -> rcpIndex [2]
+CHDB_Rx_initDefaultRcps:770 (pid=165): Docsis channel ID[3] -> rcpIndex [3]
+CHDB_Rx_initDefaultRcps:770 (pid=165): Docsis channel ID[4] -> rcpIndex [4]
+CHDB_Rx_initDefaultRcps:775 (pid=165): Video channel ID[5] -> rcpIndex [0]
+CHDB_Rx_initDefaultRcps:775 (pid=165): Video channel ID[6] -> rcpIndex [0]
+CHDB_Rx_initDefaultRcps:775 (pid=165): Video channel ID[7] -> rcpIndex [0]
+CHDB_Rx_initDefaultRcps:775 (pid=165): Video channel ID[8] -> rcpIndex [0]
+CHDB_Rx_initDefaultRcps:775 (pid=165): Video channel ID[9] -> rcpIndex [0]
+CHDB_Rx_initDefaultRcps:775 (pid=165): Video channel ID[10] -> rcpIndex [0]
+CHDB_Rx_initDefaultRcps:775 (pid=165): Video channel ID[11] -> rcpIndex [0]
+CHDB_Rx_initDefaultRcps:775 (pid=165): Video channel ID[12] -> rcpIndex [0]
+CHDB_Rx_initDefaultRcps:775 (pid=165): Video channel ID[13] -> rcpIndex [0]
+CHDB_Rx_initDefaultRcps:775 (pid=165): Video channel ID[14] -> rcpIndex [0]
+CHDB_Rx_initDefaultRcps:775 (pid=165): Video channel ID[15] -> rcpIndex [0]
+CHDB_Rx_initDefaultRcps:775 (pid=165): Video channel ID[16] -> rcpIndex [0]
+pcd: Rule DOCSIS_INITONCE: Success (Process /usr/sbin/docsis_init_once (165)).
+pcd: Starting process insmod (Rule DOCSIS_HALVLYNQ).
+pcd: Starting process /usr/sbin/cm_status (Rule DOCSIS_CMSTATUS).
+pcd: Rule DOCSIS_HALVLYNQ: Success (Process insmod (172)).
+pcd: Starting process insmod (Rule DOCSIS_SOCIFDRV).
+pcd: Rule DOCSIS_CMSTATUS: Success (Process /usr/sbin/cm_status (173)).
+pcd: Rule DOCSIS_SOCIFDRV: Success (Process insmod (175)).
+pcd: Starting process mknod (Rule DOCSIS_MKNODSOCIFDRV).
+pcd: Starting process insmod (Rule DOCSIS_BRIDGE).
+pcd: Rule DOCSIS_MKNODSOCIFDRV: Success (Process mknod (178)).
+pcd: Starting process insmod (Rule DOCSIS_MNG).
+pcd: Rule DOCSIS_MNG: Success (Process insmod (180)).
+pcd: Starting process mknod (Rule DOCSIS_MKNODMNG).
+pcd: Starting process insmod (Rule DOCSIS_KINTR).
+pcd: Rule DOCSIS_MKNODMNG: Success (Process mknod (182)).
+pcd: Rule DOCSIS_BRIDGE: Success (Process insmod (179)).
+pcd: Starting process insmod (Rule DOCSIS_FILTERCLASS).
+pcd: Starting process insmod (Rule DOCSIS_CNI).
+pcd: Rule DOCSIS_KINTR: Success (Process insmod (183)).
+pcd: Starting process /usr/sbin/hal_event_mbox (Rule DOCSIS_HALEVENTMBOX).
+pcd: Starting process /usr/sbin/hal_cmd_mbox (Rule DOCSIS_HALCMDMBOX).
+pcd: Rule DOCSIS_CNI: Success (Process insmod (186)).
+pcd: Rule DOCSIS_FILTERCLASS: Success (Process insmod (185)).
+pcd: Starting process /bin/sh (Rule DOCSIS_FCDEV).
+pcd: Rule DOCSIS_HALEVENTMBOX: Success (Process /usr/sbin/hal_event_mbox (197)).
+pcd: Rule DOCSIS_HALCMDMBOX: Success (Process /usr/sbin/hal_cmd_mbox (198)).
+pcd: Starting process /usr/sbin/mlx (Rule DOCSIS_MLX).
+pcd: Rule DOCSIS_MLX: Success (Process /usr/sbin/mlx (205)).
+pcd: Rule DOCSIS_FCDEV: Success (Process /bin/sh (203)).
+pcd: Starting process /usr/sbin/hal_tuner_mgr (Rule DOCSIS_HALTUNERMGR).
+pcd: Starting process /usr/sbin/dbridge_init (Rule DOCSIS_DBRIDGEINIT).
+pcd: Rule DOCSIS_HALTUNERMGR: Success (Process /usr/sbin/hal_tuner_mgr (217)).
+pcd: Rule DOCSIS_DBRIDGEINIT: Success (Process /usr/sbin/dbridge_init (218)).
+pcd: Starting process /usr/local/bin/mf_chk_snmpa (Rule CHK_SNMPA).
+pcd: Starting process /usr/local/bin/mf_chk_dhcpd (Rule CHK_DHCP).
+pcd: Starting process /usr/local/bin/mf_chk_bridge (Rule CHK_BRIDGE).
+pcd: Starting process /bin/sh (Rule DOCSIS_DBRIDGEMDFINIT).
+pcd: Starting process /bin/sh (Rule DOCSIS_DBRIDGEL2VPNDSI).
+pcd: Rule CHK_BRIDGE: Success (Process /usr/local/bin/mf_chk_bridge (227)).
+pcd: Rule CHK_DHCP: Success (Process /usr/local/bin/mf_chk_dhcpd (226)).
+pcd: Rule CHK_SNMPA: Success (Process /usr/local/bin/mf_chk_snmpa (225)).
+info, udhcp server (v0.9.7) started
+error, unable to open config file: /etc/udhcpd.conf
+pcd: Rule DOCSIS_DBRIDGEMDFINIT: Success (Process /bin/sh (228)).
+pcd: Starting process insmod (Rule DOCSIS_PP).
+pcd: Rule DOCSIS_DBRIDGEL2VPNDSI: Success (Process /bin/sh (229)).
+pcd: Rule DOCSIS_PP: Success (Process insmod (242)).
+pcd: Starting process /bin/sh (Rule DOCSIS_PPDEV).
+pcd: Rule DOCSIS_HALREADY: Success.
+pcd: Starting process /usr/sbin/snmp_agent_cm (Rule DOCSIS_SNMPAGENT).
+pcd: Starting process /usr/sbin/qos_dsx_sm (Rule DOCSIS_QOSDSXSM).
+pcd: Starting process /usr/local/bin/mfspf (Rule DOCSIS_MFSPF).
+pcd: Starting process /usr/sbin/dispatcher (Rule DOCSIS_DISPATCHER).
+pcd: Starting process /usr/sbin/bpi_auth (Rule DOCSIS_BPIAUTH).
+pcd: Starting process /usr/sbin/dropbear (Rule SYSTEM_DROPBEAR).
+pcd: Rule SYSTEM_DROPBEAR: Success (Process /usr/sbin/dropbear (252)).
+pcd: Rule DOCSIS_DISPATCHER: Success (Process /usr/sbin/dispatcher (250)).
+pcd: Starting process /usr/sbin/docsis_mac_driver (Rule DOCSIS_MACDRIVER).
+pcd: Rule DOCSIS_PPDEV: Success (Process /bin/sh (245)).
+pcd: Rule DOCSIS_QOSDSXSM: Success (Process /usr/sbin/qos_dsx_sm (248)).
+pcd: Rule DOCSIS_BPIAUTH: Success (Process /usr/sbin/bpi_auth (251)).
+pcd: Starting process /usr/sbin/bpi_tek (Rule DOCSIS_BPITEK).
+pcd: Starting process /usr/sbin/bpi_sa_map (Rule DOCSIS_BPISAMAP).
+pcd: Rule DOCSIS_BPISAMAP: Success (Process /usr/sbin/bpi_sa_map (260)).
+pcd: Rule DOCSIS_BPITEK: Success (Process /usr/sbin/bpi_tek (259)).
+pcd: Starting process /usr/sbin/downstream_manager (Rule DOCSIS_DSMNGR4).
+pcd: Starting process /usr/sbin/downstream_manager (Rule DOCSIS_DSMNGR3).
+pcd: Starting process /usr/sbin/downstream_manager (Rule DOCSIS_DSMNGR2).
+pcd: Starting process /usr/sbin/downstream_manager (Rule DOCSIS_DSMNGR1).
+pcd: Rule DOCSIS_DSMNGR1: Success (Process /usr/sbin/downstream_manager (271)).
+pcd: Rule DOCSIS_DSMNGR2: Success (Process /usr/sbin/downstream_manager (270)).
+pcd: Rule DOCSIS_DSMNGR4: Success (Process /usr/sbin/downstream_manager (265)).
+pcd: Rule DOCSIS_DSMNGR3: Success (Process /usr/sbin/downstream_manager (268)).
+pcd: Starting process /usr/sbin/upstream_manager (Rule DOCSIS_USMNGR1).
+pcd: Starting process /usr/sbin/upstream_manager (Rule DOCSIS_USMNGR2).
+pcd: Starting process /usr/sbin/upstream_manager (Rule DOCSIS_USMNGR3).
+pcd: Starting process /usr/sbin/upstream_manager (Rule DOCSIS_USMNGR4).
+pcd: Rule DOCSIS_USMNGR4: Success (Process /usr/sbin/upstream_manager (275)).
+pcd: Rule DOCSIS_USMNGR2: Success (Process /usr/sbin/upstream_manager (273)).
+pcd: Rule DOCSIS_USMNGR1: Success (Process /usr/sbin/upstream_manager (272)).
+pcd: Rule DOCSIS_USMNGR3: Success (Process /usr/sbin/upstream_manager (274)).
+pcd: Rule DOCSIS_MACDRIVER: Success (Process /usr/sbin/docsis_mac_driver (253)).
+pcd: Starting process /usr/local/bin/lighttpd (Rule DOCSIS_LIGHTTPD).
+pcd: Rule DOCSIS_LIGHTTPD: Success (Process /usr/local/bin/lighttpd (284)).
+pcd: Rule DOCSIS_SNMPAGENT: Success (Process /usr/sbin/snmp_agent_cm (247)).
+pcd: Starting process /usr/sbin/eventmgr_cm (Rule DOCSIS_EVENTMNGR).
+pcd: Rule DOCSIS_EVENTMNGR: Success (Process /usr/sbin/eventmgr_cm (285)).
+pcd: Starting process /usr/sbin/docsis_mac_manager (Rule DOCSIS_MACMANAGER).
+pcd: Rule DOCSIS_MACMANAGER: Success (Process /usr/sbin/docsis_mac_manager (286)).
+pcd: Rule DOCSIS_LASTRULE: Success.
+pcd: Starting process /usr/sbin/dmg_provisioning (Rule DOCSIS_DMGPROV).
+pcd: Rule DOCSIS_DMGPROV: Success (Process /usr/sbin/dmg_provisioning (343)).
+pcd: Starting process /sbin/ti_udhcpc (Rule DOCSIS_DHCPV4).
+pcd: Rule DOCSIS_DHCPV4: Success (Process /sbin/ti_udhcpc (345)).
+debug, default_plugin_init
+
+info, Plugin UDHCPC Default registered successfully
+
+info, Plugin Sample registered successfully
+
+info, TI udhcp client (v1.0) started
+info, TI udhcp client read_interface, udhcp_client_config.ifindex = 6
+debug, entering raw listen mode
+info, udhcpc_get_stats
+debug, Sending discover...
+report_config:995 (pid=345): [DHCP4_PLG]: report_config():The DHCPv4 will wait to next packet
+info, udhcpc_get_stats
+debug, found a plugin option
+
+debug, found a plugin option
+
+debug, found a plugin option
+
+info, udhcpc_get_stats
+info, udhcpc_get_stats
+debug, Sending select for 10.35.146.157...
+report_config:995 (pid=345): [DHCP4_PLG]: report_config():The DHCPv4 will wait to next packet
+info, udhcpc_get_stats
+debug, found a plugin option
+
+debug, found a plugin option
+
+debug, found a plugin option
+
+utils_system:263 (pid=345): [utils_system]: The processing of the wait status NOT IMPLEMENTED YET opt = 0
+dhcp4_addAddr:1537 (pid=345): [DHCP4_PLG]: Set to the wan0 addr: 10.35.146.157 mask: 255.255.128.0 router: 10.35.128.1
+
+printIpProvAddrDescriptor:1089 (pid=345): ================== The DHCPv4 succesfully set to IP DB: ====================
+printInetAddr:990 (pid=345): ******** Cm Ip Addr ********
+utils_printAddrByFamily:210 (pid=345): 10.35.146.157
+printIpAddrType:914 (pid=345): IP addr type = IPv4
+printIpAddrFamily:944 (pid=345): IP addr family = AF_INET
+printIpAddrField:973 (pid=345): IP addr subnet = 255.255.128.0
+printInetAddr:998 (pid=345): **************************
+printInetAddr:990 (pid=345): ******** DHCP server Addr ********
+utils_printAddrByFamily:210 (pid=345): 201.17.0.64
+printIpAddrType:914 (pid=345): IP addr type = IPv4
+printIpAddrFamily:944 (pid=345): IP addr family = AF_INET
+printIpAddrField:973 (pid=345): IP addr subnet = 255.255.128.0
+printInetAddr:998 (pid=345): **************************
+printInetAddr:990 (pid=345): ******** Log server Addr ********
+utils_printAddrByFamily:210 (pid=345): 201.6.0.43
+printIpAddrType:914 (pid=345): IP addr type = IPv4
+printIpAddrFamily:944 (pid=345): IP addr family = AF_INET
+printIpAddrField:973 (pid=345): IP addr subnet = 255.255.128.0
+printInetAddr:998 (pid=345): **************************
+printInetAddrList:1019 (pid=345): ******** Router InetAddr List ********
+printInetAddr:990 (pid=345): ******** InetAddr 0 ********
+utils_printAddrByFamily:210 (pid=345): 10.35.128.1
+printIpAddrType:914 (pid=345): IP addr type = IPv4
+printIpAddrFamily:944 (pid=345): IP addr family = AF_INET
+printIpAddrField:973 (pid=345): IP addr subnet = 255.255.128.0
+printInetAddr:998 (pid=345): **************************
+printInetAddrList:1027 (pid=345): IP Addr List length = 1, curr index = 0
+printInetAddrList:1030 (pid=345): **************************
+printTodEntry:1046 (pid=345): ******** TOD Entry ********
+printInetAddrList:1019 (pid=345): ******** TOD address list ********
+printInetAddr:990 (pid=345): ******** InetAddr 0 ********
+utils_printAddrByFamily:210 (pid=345): 201.17.0.64
+printIpAddrType:914 (pid=345): IP addr type = IPv4
+printIpAddrFamily:944 (pid=345): IP addr family = AF_INET
+printIpAddrField:973 (pid=345): IP addr subnet = 255.255.128.0
+printInetAddr:998 (pid=345): **************************
+printInetAddr:990 (pid=345): ******** InetAddr 1 ********
+utils_printAddrByFamily:210 (pid=345): 201.17.0.54
+printIpAddrType:914 (pid=345): IP addr type = IPv4
+printIpAddrFamily:944 (pid=345): IP addr family = AF_INET
+printIpAddrField:973 (pid=345): IP addr subnet = 255.255.128.0
+printInetAddr:998 (pid=345): **************************
+printInetAddrList:1027 (pid=345): IP Addr List length = 2, curr index = 0
+printInetAddrList:1030 (pid=345): **************************
+printTodEntry:1050 (pid=345): TOD time zone = -10800, time set = FALSE
+printTodEntry:1053 (pid=345): **************************
+printTftpEntry:1069 (pid=345): ******** TFTP Entry ********
+printInetAddrList:1019 (pid=345): ******** TFTP address list ********
+printInetAddr:990 (pid=345): ******** InetAddr 0 ********
+utils_printAddrByFamily:210 (pid=345): 10.35.128.1
+printIpAddrType:914 (pid=345): IP addr type = IPv4
+printIpAddrFamilyInfo, default_plugin_init
+
+Info, Plugin TI_TODC Default registered successfully
+
+Info, Plugin libdocsis_todplg.so registered successfully
+
+TI ToD client (v1.0) started 
+Info, EVENT:startup
+
+Info, Curr time from 201.17.0.64: Fri Jun 17 21:38:14 2011
+ 
+
+Info, EVENT:Successfully retrieved time from TOD Server
+
+Gim_NotificationSend:289 (pid=360): nid=4104: type NRN with 0 bytes data
+report_config:165 (pid=360): =========================================
+report_config:166 (pid=360): [TOD_PLG]: Was revceived time Fri Jun 17 18:38:14 2011
+ from ToD server 201.17.0.64, timezone =-10800
+report_config:167 (pid=360): =========================================
+DPR_act_ProvEntry:197 (pid=343): 
+DPR_act_ProvEntry:198 (pid=343): ***   CM PROVISIONING...   ***
+DPR_act_ProvEntry:199 (pid=343): 
+DPR_cond_IsEAE:231 (pid=343): EAE Disabled.
+IPP_act_Entry:324 (pid=343): -------------------------------------------------------
+IPP_act_Entry:326 (pid=343):   IP provisioning start in the IP_PROV_V4_ONLY mode
+IPP_act_Entry:327 (pid=343): -------------------------------------------------------
+
+printInetAddr:990 (pid=343): ******** Log server Addr ********
+utils_printAddrByFamily:210 (pid=343): 201.6.0.43
+printIpAddrType:914 (pid=343): IP addr type = IPv4
+printIpAddrFamily:944 (pid=343): IP addr family = AF_INET
+printIpAddrField:973 (pid=343): IP addr subnet = 255.255.128.0
+printInetAddr:998 (pid=343): **************************
+printInetAddr:990 (pid=343): ******** Set syslog address to the log manager ********
+utils_printAddrByFamily:210 (pid=343): 201.6.0.43
+printIpAddrType:914 (pid=343): IP addr type = IPv4
+printIpAddrFamily:944 (pid=343): IP addr family = AF_INET
+printIpAddrField:973 (pid=343): IP addr subnet = 255.255.128.0
+printInetAddr:998 (pid=343): **************************
+ToD_act_Entry:131 (pid=343): 
+********  Start ObtainToD process  ********
+
+ObtConf_act_EntryTftpWait:266 (pid=343): 
+********  Start ObtainConfig process  ********
+
+[INFO] [DOCSIS.PROV(pid=343)]: DOCSIS provisioning Got SIGCHLD, from pid = 359
+[INFO] [DOCSIS.PROV(pid=343)]: DOCSIS provisioning Got SIGCHLD, from pid = 366
+cfgfParserInit:1029 (pid=343): cfgfParserInit
+SWDL_SwDlAux_CheckProvPowerRFLossEvent:589 (pid=343): Power Loss occured during previous SW DL via provisioning!
+cfgfParserInit:1061 (pid=343): Sending provisioning SW DL Power Failure event
+qos_intDb_ResetTaDbRow:144 (pid=343): qos_intDb_ResetTaDbRow:  DSX TA entry removal. DB Index = 0, TA ID = 0x0.
+qos_intDb_ResetTaDbRow:144 (pid=343): qos_intDb_ResetTaDbRow:  DSX TA entry removal. DB Index = 1, TA ID = 0x0.
+qos_intDb_ResetTaDbRow:144 (pid=343): qos_intDb_ResetTaDbRow:  DSX TA entry removal. DB Index = 2, TA ID = 0x0.
+qos_intDb_ResetTaDbRow:144 (pid=343): qos_intDb_ResetTaDbRow:  DSX TA entry removal. DB Index = 3, TA ID = 0x0.
+qos_intDb_ResetTaDbRow:144 (pid=343): qos_intDb_ResetTaDbRow:  DSX TA entry removal. DB Index = 4, TA ID = 0x0.
+qos_intDb_ResetTaDbRow:144 (pid=343): qos_intDb_ResetTaDbRow:  DSX TA entry removal. DB Index = 5, TA ID = 0x0.
+qos_intDb_ResetTaDbRow:144 (pid=343): qos_intDb_ResetTaDbRow:  DSX TA entry removal. DB Index = 6, TA ID = 0x0.
+qos_intDb_ResetTaDbRow:144 (pid=343): qos_intDb_ResetTaDbRow:  DSX TA entry removal. DB Index = 7, TA ID = 0x0.
+qos_intDb_ResetTaDbRow:144 (pid=343): qos_intDb_ResetTaDbRow:  DSX TA entry removal. DB Index = 8, TA ID = 0x0.
+qos_intDb_ResetTaDbRow:144 (pid=343): qos_intDb_ResetTaDbRow:  DSX TA entry removal. DB Index = 9, TA ID = 0x0.
+performFirstPass:1255 (pid=343): [performFirstPass(in)]
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 17, length = 42
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 29, length = 1
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 3, length = 1
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 28, length = 2
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 11, length = 21
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 11, length = 21
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 11, length = 23
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 11, length = 18
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 11, length = 18
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 11, length = 20
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 11, length = 20
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 11, length = 21
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 11, length = 20
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 11, length = 20
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 11, length = 21
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 11, length = 21
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 11, length = 21
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 11, length = 21
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 11, length = 21
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 11, length = 22
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 11, length = 20
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 11, length = 20
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 18, length = 1
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 11, length = 17
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 9, length = 35
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 21, length = 4
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 32, length = 254
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 32, length = 254
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 32, length = 254
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 32, length = 171
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 11, length = 21
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 11, length = 21
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 11, length = 23
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 11, length = 18
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 11, length = 18
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 24, length = 53
+sfSubTLVParse:3980 (pid=343): Service Flow Sub-TLV 1, length = 2
+sfSubTLVParse:3980 (pid=343): Service Flow Sub-TLV 6, length = 1
+sfSubTLVParse:3980 (pid=343): Service Flow Sub-TLV 7, length = 1
+sfSubTLVParse:3980 (pid=343): Service Flow Sub-TLV 8, length = 4
+sfSubTLVParse:3980 (pid=343): Service Flow Sub-TLV 9, length = 4
+sfSubTLVParse:3980 (pid=343): Service Flow Sub-TLV 10, length = 4
+sfSubTLVParse:3980 (pid=343): Service Flow Sub-TLV 11, length = 2
+sfSubTLVParse:3980 (pid=343): Service Flow Sub-TLV 12, length = 2
+sfSubTLVParse:3980 (pid=343): Service Flow Sub-TLV 13, length = 2
+sfSubTLVParse:3980 (pid=343): Service Flow Sub-TLV 14, length = 2
+sfSubTLVParse:3980 (pid=343): Service Flow Sub-TLV 15, length = 1
+sfSubTLVParse:3980 (pid=343): Service Flow Sub-TLV 16, length = 4
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 24, length = 53
+sfSubTLVParse:3980 (pid=343): Service Flow Sub-TLV 1, length = 2
+sfSubTLVParse:3980 (pid=343): Service Flow Sub-TLV 6, length = 1
+sfSubTLVParse:3980 (pid=343): Service Flow Sub-TLV 7, length = 1
+sfSubTLVParse:3980 (pid=343): Service Flow Sub-TLV 8, length = 4
+sfSubTLVParse:3980 (pid=343): Service Flow Sub-TLV 9, length = 4
+sfSubTLVParse:3980 (pid=343): Service Flow Sub-TLV 10, length = 4
+sfSubTLVParse:3980 (pid=343): Service Flow Sub-TLV 11, length = 2
+sfSubTLVParse:3980 (pid=343): Service Flow Sub-TLV 12, length = 2
+sfSubTLVParse:3980 (pid=343): Service Flow Sub-TLV 13, length = 2
+sfSubTLVParse:3980 (pid=343): Service Flow Sub-TLV 14, length = 2
+sfSubTLVParse:3980 (pid=343): Service Flow Sub-TLV 15, length = 1
+sfSubTLVParse:3980 (pid=343): Service Flow Sub-TLV 16, length = 4
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 25, length = 46
+sfSubTLVParse:3980 (pid=343): Service Flow Sub-TLV 1, length = 2
+sfSubTLVParse:3980 (pid=343): Service Flow Sub-TLV 6, length = 1
+sfSubTLVParse:3980 (pid=343): Service Flow Sub-TLV 7, length = 1
+sfSubTLVParse:3980 (pid=343): Service Flow Sub-TLV 8, length = 4
+sfSubTLVParse:3980 (pid=343): Service Flow Sub-TLV 9, length = 4
+sfSubTLVParse:3980 (pid=343): Service Flow Sub-TLV 10, length = 4
+sfSubTLVParse:3980 (pid=343): Service Flow Sub-TLV 11, length = 2
+sfSubTLVParse:3980 (pid=343): Service Flow Sub-TLV 12, length = 2
+sfSubTLVParse:3980 (pid=343): Service Flow Sub-TLV 13, length = 2
+sfSubTLVParse:3980 (pid=343): Service Flow Sub-TLV 14, length = 4
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 25, length = 46
+sfSubTLVParse:3980 (pid=343): Service Flow Sub-TLV 1, length = 2
+sfSubTLVParse:3980 (pid=343): Service Flow Sub-TLV 6, length = 1
+sfSubTLVParse:3980 (pid=343): Service Flow Sub-TLV 7, length = 1
+sfSubTLVParse:3980 (pid=343): Service Flow Sub-TLV 8, length = 4
+sfSubTLVParse:3980 (pid=343): Service Flow Sub-TLV 9, length = 4
+sfSubTLVParse:3980 (pid=343): Service Flow Sub-TLV 10, length = 4
+sfSubTLVParse:3980 (pid=343): Service Flow Sub-TLV 11, length = 2
+sfSubTLVParse:3980 (pid=343): Service Flow Sub-TLV 12, length = 2
+sfSubTLVParse:3980 (pid=343): Service Flow Sub-TLV 13, length = 2
+sfSubTLVParse:3980 (pid=343): Service Flow Sub-TLV 14, length = 4
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 22, length = 27
+ipv4ClassSubTLVParse:3802 (pid=343): IPv4 Classifier Sub-TLV 2, length = 2
+ipv4ClassSubTLVParse:3802 (pid=343): IPv4 Classifier Sub-TLV 9, length = 2
+ipv4ClassSubTLVParse:3802 (pid=343): IPv4 Classifier Sub-TLV 10, length = 2
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 23, length = 27
+ipv4ClassSubTLVParse:3802 (pid=343): IPv4 Classifier Sub-TLV 2, length = 2
+ipv4ClassSubTLVParse:3802 (pid=343): IPv4 Classifier Sub-TLV 9, length = 2
+ipv4ClassSubTLVParse:3802 (pid=343): IPv4 Classifier Sub-TLV 10, length = 2
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 6, length = 16
+cfgfTopLevelTLVFirstPass:1594 (pid=343): First pass: Top Level TLV 7, length = 16
+performFirstPass:1267 (pid=343): [performFirstPass(out)]
+verifyConfigFile:2489 (pid=343): [verifyConfigFile(in)]
+verifyConfigFile:2516 (pid=343): [verifyConfigFile(out)]
+resetDBs:2765 (pid=343): [resetDBs(in)]
+DocsisDb_ResetCfgParameters:59 (pid=343): [CFG_PRS_STUB]: DocsisDb_ResetCfgParameters() not implemented yet!!!
+
+SnmpDb_ResetCfgParameters:356 (pid=343): [CFG_PRS_STUB]: SnmpDb_ResetCfgParameters() not implemented yet!!!
+
+BridgeDb_ResetCfgParameters:446 (pid=343): [CFG_PRS_STUB]: BridgeDb_ResetCfgParameters() not implemented yet!!!
+
+resetDBs:2814 (pid=343): [resetDBs(out)]
+Gim_NotificationSend:289 (pid=343): nid=4108: type SRN with 22 bytes data
+DOCSIS_ESAFE_GetNetDevEsafeName:1145 (pid=343): Cannot read file: /proc/net/dbrctl/esafe_config
+FcCfgIoctl:636 (pid=343): Ioctl to Docsis Filters/Classifiers cfg char device failed: Inappropriate ioctl for device
+
+ReportTlv11Events:4744 (pid=343): Config file contains unsupported OID's in TLV11 - Ignore!
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 17, length = 42
+bpSubTLVParse:3712 (pid=343): Sub-TLV 1, length = 4
+bpSubTLVParse:3712 (pid=343): Sub-TLV 2, length = 4
+bpSubTLVParse:3712 (pid=343): Sub-TLV 3, length = 4
+bpSubTLVParse:3712 (pid=343): Sub-TLV 4, length = 4
+bpSubTLVParse:3712 (pid=343): Sub-TLV 5, length = 4
+bpSubTLVParse:3712 (pid=343): Sub-TLV 6, length = 4
+bpSubTLVParse:3712 (pid=343): Sub-TLV 7, length = 4
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 29, length = 1
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 3, length = 1
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 28, length = 2
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 11, length = 21
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 11, length = 21
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 11, length = 23
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 11, length = 18
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 11, length = 18
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 11, length = 20
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 11, length = 20
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 11, length = 21
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 11, length = 20
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 11, length = 20
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 11, length = 21
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 11, length = 21
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 11, length = 21
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 11, length = 21
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 11, length = 21
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 11, length = 22
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 11, length = 20
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 11, length = 20
+cfgfTopLevelTLVSecondPassMddHandler_InitMddHandler:182 (pid=250): MDD Init completed successfully
+MddHandler_HandleMddControlMessage:297 (pid=250): MddHandler_HandleMddControlMessage: Handle MDD Control Message for state 1 completed.
+MddHandler_HandleMddControlMessage:297 (pid=250): MddHandler_HandleMddControlMessage: Handle MDD Control Message for state 0 completed.
+startCollectUcdModeA:1246 (pid=250): US[1] [UCID All]: UCD Collect on DS[1]...
+CHDB_Rx_GetChannelID:942 (pid=250): Could not find DCID for freq 507000000 (port 1)
+DocsisDb_SetMacDomainAddress:196 (pid=250): Cannot open file /proc/net/dbrctl/cmtsmac
+Mdd_MddDb_GetSymbolClockLockingIndicator:1335 (pid=250): Mdd_MddDb_GetSymbolClockLockingIndicator: symbol clock indicator(MDD TLV 10) is ignored
+ucd_createRspMsg:1195 (pid=250): US[1] [UCID All]: 4 UCDs Found; 4 UCDs ordered [UCIDs: 4 1 2 3 0 0 0 0].
+USM_rngRspMsgParse:346 (pid=250): RNG-RSP contains US redirection request to usId=2
+startCollectUcdModeB:1408 (pid=250): US[1] [UCID 2]: UCD Collect on DS[1]...
+Mdd_MddDb_GetSymbolClockLockingIndicator:1335 (pid=250): Mdd_MddDb_GetSymbolClockLockingIndicator: symbol clock indicator(MDD TLV 10) is ignored
+Mdd_MddDb_GetSymbolClockLockingIndicator:1335 (pid=250): Mdd_MddDb_GetSymbolClockLockingIndicator: symbol clock indicator(MDD TLV 10) is ignored
+Mdd_MddDb_GetSymbolClockLockingIndicator:1335 (pid=250): Mdd_MddDb_GetSymbolClockLockingIndicator: symbol clock indicator(MDD TLV 10) is ignored
+stopCollectUcdModeB:1474 (pid=250): US[1] [UCID 2]: UCD Found on DS[1] [change count 18].
+RegRspHandle:1237 (pid=250): REG-RSP received [CMTS Response 0].
+Mdd_MddDb_GetSymbolClockLockingIndicator:1335 (pid=250): Mdd_MddDb_GetSymbolClockLockingIndicator: symbol clock indicator(MDD TLV 10) is ignored
+Hal_RngGetAbsoluteTimeOffset:1565 (pid=250):  US[1]: Symbol Clock Locking Indicator = 0
+Hal_RngGetAbsoluteTimeOffset:1574 (pid=250):  US[1] UCD DB scdmaOn value = 2
+Hal_RngGetAbsoluteTimeOffset:1614 (pid=250):  US[1]: timeOffsetIntUnsignedValue=0x2290, dsInitialTimingOffset=0x1b34, Absolute integer=0x75c, Absolute fractional=0x0
+keepRngParamsForReference:816 (pid=250): Got referParams for port=1, usId=2:
+keepRngParamsForReference:820 (pid=250): ucdFreq=29800000, currFreq=29800000 timeInt=1883 timeFract=0 power 0x91*0.25dB
+keepRngParamsForReference:816 (pid=250): Got referParams for port=2, usId=0:
+keepRngParamsForReference:820 (pid=250): ucdFreq=29800000, currFreq=29800000 timeInt=1883 timeFract=0 power 0x91*0.25dB
+keepRngParamsForReference:816 (pid=250): Got referParams for port=3, usId=0:
+keepRngParamsForReference:820 (pid=250): ucdFreq=29800000, currFreq=29800000 timeInt=1883 timeFract=0 power 0x91*0.25dB
+keepRngParamsForReference:816 (pid=250): Got referParams for port=4, usId=0:
+keepRngParamsForReference:820 (pid=250): ucdFreq=29800000, currFreq=29800000 timeInt=1883 timeFract=0 power 0x91*0.25dB
+qos_regUtils_SfTlvCheck:1514 (pid=250): SF TLV parsing (first pass) - type=24 Length=63
+qos_regUtils_SfTlvCheck:1624 (pid=250): SF TLV parsing (first pass) completed - SFID=0x59a7, internal DB index=0
+
+qos_regUtils_SfTlvCheck:1514 (pid=250): SF TLV parsing (first pass) - type=24 Length=63
+qos_regUtils_SfTlvCheck:1624 (pid=250): SF TLV parsing (first pass) completed - SFID=0x60e5, internal DB index=1
+
+regRspGotBpiPlusCap:1965 (pid=250): Staying with current BPI+ mode
+regRspGotMdf:2093 (pid=250): Got MDF Support Mode 0 in REG-RSP
+regRspGotMapUcdSrc:2121 (pid=250): Got UCD Source Support Mode 1 in REG-RSP
+qos_regUtils_SfTlvCheck:1514 (pid=250): SF TLV parsing (first pass) - type=25 Length=52
+qos_regUtils_SfTlvCheck:1624 (pid=250): SF TLV parsing (first pass) completed - SFID=0x59a8, internal DB index=2
+
+qos_regUtils_SfTlvCheck:1514 (pid=250): SF TLV parsing (first pass) - type=25 Length=52
+qos_regUtils_SfTlvCheck:1624 (pid=250): SF TLV parsing (first pass) completed - SFID=0x60e6, internal DB index=3
+
+qos_regUtils_ClsfTlvCheck:1719 (pid=250): Clsf TLV parsing (first pass) - TLV type 0x16, length=37 
+qos_regUtils_ClsfTlvCheck:1837 (pid=250): Clsf TLV parsing (first pass) completed - ClsfRef=0x2, ClsfId=0x1, SfRef=0x2, SfId=0x60e5
+:2839 (pid=343): Second pass: Top Level TLV 18, length = 1
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 11, length = 17
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 9, length = 35
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 21, length = 4
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 32, length = 254
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 32, length = 254
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 32, length = 254
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 32, length = 171
+VerifyCvcAndSignature:570 (pid=343): CVC Subject orgName = Motorola Corporation
+VerifyCvcAndSignature:572 (pid=343): CVC Issuer orgName = Data Over Cable Service Interface Specifications
+VerifyCvcAndSignature:586 (pid=343): CVC Root Sign
+VerifyCvcAndSignature:610 (pid=343): CVC Signature was verified!
+CheckExtendedKeyUsage:836 (pid=343): Extended key usage was verified
+CheckCvcValidity:912 (pid=343): CVC org name match
+CheckCvcValidity:969 (pid=343): CVC start time OK
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 11, length = 21
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 11, length = 21
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 11, length = 23
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 11, length = 18
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 11, length = 19
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 11, length = 18
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 24, length = 53
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 24, length = 53
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 25, length = 46
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 25, length = 46
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 22, length = 27
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 23, length = 27
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 6, length = 16
+cfgfTopLevelTLVSecondPass:2839 (pid=343): Second pass: Top Level TLV 7, length = 16
+setBpiMode:2599 (pid=343): Config file: privacy is Enabled, privacy mode is BPI+
+CfgFileParser_Activate:956 (pid=343): Configuration file processing complete (status = 0).
+CfgFileParser_Activate:968 (pid=343): Configuration file: Saved to NVRAM vendorClassId = 0
+IPP_act_Exit:414 (pid=343): 
+
+IPP_act_Exit:415 (pid=343): **********************************************************
+IPP_act_Exit:416 (pid=343): **********************************************************
+IPP_act_Exit:417 (pid=343): **                                                      **
+IPP_act_Exit:418 (pid=343): **         IP PROVISIONING FINISHED SUCCESSFULLY        **
+IPP_act_Exit:419 (pid=343): **         -------------------------------------        **
+IPP_act_Exit:420 (pid=343): **                                                      **
+IPP_act_Exit:421 (pid=343): **********************************************************
+IPP_act_Exit:422 (pid=343): **********************************************************
+IPP_act_Exit:423 (pid=343): 
+
+DCR_act_ResetRetry:156 (pid=343): 
+DCR_act_ResetRetry:157 (pid=343): ***   CM REGISTRATION...   ***
+DCR_act_ResetRetry:158 (pid=343): 
+RegMhReqSend:604 (pid=343): REG-REQ sent.
+qos_regUtils_SfUpdateLowerLayer:1301 (pid=343): HAL/FW was updated with Service Flow parameters SFID=0x59a7 sfIndex=0
+qos_regUtils_SfUpdateLowerLayer:1301 (pid=343): HAL/FW was updated with Service Flow parameters SFID=0x60e5 sfIndex=1
+qos_regUtils_ClsfUpdateLowerLayer:1474 (pid=343): Classifier - ClsfID=0x1 of SFID=0x60e5 - successfully configured in the lower layer
+
+qos_regUtils_UpdateLowerLayers:764 (pid=343): ****** QOS update the lower layers exit - SUCCESS ******
+
+DCR_act_RegCompleteInit:
