@@ -1,0 +1,771 @@
+
+CM/Console/system> help show
+
+COMMAND:  show
+
+USAGE:  show  [flash|memory|threads|forwarder|blocks|ecos|sockets|fpm|dqm|nonvol]
+
+DESCRIPTION:
+Shows state of the system.
+
+
+EXAMPLES:
+     show flash      -- Show flash memory info
+     show memory     -- Show RAM and buffer info
+     show threads    -- Shows the state of active threads in the system
+     show forwarder  -- Shows the forwarder's learning tables and forwarder's 
+                        HAL interfaces
+     show blocks     -- Shows the number of serial driver writes blocked due 
+                        to transmiting too much at once
+     show ecos       -- Shows the eCos ip/tcp/udp statistics
+     show sockets    -- Shows the eCos socket out of mbuf/cluster socket 
+                        history tracking logs
+     show fpm        -- Displays the configuration settings and statistics of 
+                        the Hardware Free Pool Manager Object
+     show dqm        -- Displays the internal state of the DQM interface
+     show nonvol     -- Displays the current non-volatile settings values for 
+                        both the permanent and dynamic sections
+
+
+---------------------------------------------------------------------------
+
+
+CM/Console/system> show 
+CM/Console/system>  
+CM/Console/system> show nonvol
+CM/Console/system> show nonvol
+
+
++---------------------------------+
+|                                 |
+| BFC Application NonVol Settings
++---------------------------------+
+               Magic Number = 0x434d4170 'CMAp'
+        Version (Permanent) = 0.1
+          Version (Dynamic) = 0.1
+     Is Default (Permanent) = 1
+       Is Default (Dynamic) = 0
+Is Manufactured (Permanent) = 1
+  Is Manufactured (Dynamic) = 1
+
+CM Application Permanent NonVol Settings:
+
+      Automatically stop at console = 0
+  'Skip driver init' Prompt Enabled = 0
+   'Stop at console' Prompt Enabled = 0
+
+CM Application Dynamic NonVol Settings:
+
+                Serial console mode = readWrite
+
++--------------------------------+
+|                                |
+| User Interface NonVol Settings
++--------------------------------+
+               Magic Number = 0x4d4c6f67 'MLog'
+        Version (Permanent) = 0.2
+          Version (Dynamic) = 0.5
+     Is Default (Permanent) = 1
+       Is Default (Dynamic) = 0
+Is Manufactured (Permanent) = 1
+  Is Manufactured (Dynamic) = 1
+
+User Interface Dynamic NonVol Settings:
+
+          HTTP User ID = ''
+    HTTP User Password = 'admin'
+         HTTP Admin ID = ''
+   HTTP Admin Password = 'aDm1n$TR8r'
+         Remote Access User Name = ''
+          Remote Access Password = ''
+Remote Access inactivity timeout = '0'
+           Telnet Access Enabled = 0
+          Telnet IP Stack enable = 0x3 (IP2|IP1)
+              SSH Access Enabled = 0
+             SSH IP Stack enable = 0x3 (IP2|IP1)
+             HTTP Access Enabled = 0
+            HTTP IP stack enable = 0x2 (IP2)
+   HTTP Advanced IP stack enable = 0 ({None})
+             HTTP Password Seed = ''
+HTTP Remote IP ACL (emtpy == allow all)::
+
+      HTTP Password Idle Timeout = 0
+       Exception Logging Enabled = 1
+
+User Interface Permanent NonVol Settings:
+
+              Default Severities = 0x7 (Warnings | Errors | Fatal Errors)
+                  Default Fields = 0x3f (Thread Id | Timestamps | Module/Class Name | Function/Method Name | Instance Name | Severity)
+        Remote Access IP address = 192.168.100.1
+       Remote Access Subnet Mask = 255.255.255.0
+    Remote Access Router address = 192.168.100.254
+   Remote Access IP Stack Number = 2
+
++-----------------------+
+|                       |
+| HalIf NonVol Settings
++-----------------------+
+               Magic Number = 0xf2a1f61f '....'
+        Version (Permanent) = 0.19
+          Version (Dynamic) = 0.0
+     Is Default (Permanent) = 1
+       Is Default (Dynamic) = 0
+Is Manufactured (Permanent) = 0
+                    (NOT SET: IP stack 1 MAC, IP stack 2 MAC)
+  Is Manufactured (Dynamic) = 1
+
+HAL Interface Permanent NonVol Settings:
+
+    Enabled Interfaces = 0x33 (IP2 IP1 Ethernet DocsisCm)
+
+    MAC address for IP Stack 1 = 00:10:95:de:ad:01
+    MAC address for IP Stack 2 = 00:10:95:de:ad:02
+    MAC address for IP Stack 3 = 00:10:95:de:ad:03
+    MAC address for IP Stack 4 = 00:10:95:de:ad:04
+    MAC address for IP Stack 5 = 00:10:95:de:ad:05
+    MAC address for IP Stack 6 = 00:10:95:de:ad:06
+    MAC address for IP Stack 7 = 00:10:95:de:ad:07
+    MAC address for IP Stack 8 = 00:10:95:de:ad:08
+
+    Default HAL Debug Zones = 0 ({None})
+
+    Board Rev = 18 (BCM93345)
+
+    USB HAL Settings:
+    ----------------
+         USB Vendor Id = 0x69b
+         USB Device Id = 0x705
+       USB MAC address = 00:10:95:de:ad:09
+USB Rndis Driver Enabled = 1
+
+    Bluetooth HAL Settings:
+    -----------------------
+     Local Mac Address = 00:10:95:de:ad:0a
+    Remote Mac Address = 00:10:95:de:ad:0b
+        Master Enabled = 0
+
+    Ethernet HAL Settings:
+    ---------------------
+           Autonegotiate Enabled = 1
+              Default Link Speed = 10 Mbps
+        Default Link Full Duplex = 0
+              Reject CAM Enabled = 1
+
+    HPNA HAL Settings:
+    -----------------
+           Default Message Level = 1
+
+    CM HAL Settings:
+    ---------------
+                Downstream Tuner Type = 24 (BCM Internal)
+                    Upstream Amp Type = 9 (BCM INTERNAL AMP)
+                             Diplexer = 1 (low-split)
+       Downstream Reference Frequency = 29000000 hz
+         Upstream Reference Frequency = 29000000 hz
+               Input Frequency to PHY = 5000000 hz
+                           Annex Mode = ANNEX OTHER
+                       Spreader Scale = 1
+            Upstream Sample Frequency = 480000000 hz
+                      1024QAM Enabled = 0
+              Use DOCSIS 2.0 Clipping = 1
+Proprietary SCDMA Code Matrix Enabled = 0
+         Advance Map RunAhead Enabled = 1
+Upstream Priority Queue Support Enable = 1
+                               DS_AGI = 0xd
+                               DS_AGT = 0x1d
+                               STATHR = 0x400
+                                STAGI = 0
+                               STPGA1 = 0x20042
+                                STAGT = 0xfff00000
+                               STABW1 = 0xd0b
+                               STABW2 = 0x409
+                Number of SHACK Tries = 3
+              Power save mode enabled = 0
+ Optimized 3420 frequency map enabled = 1
+               High output PA enabled = 0
+
+    Board HAL Settings:
+    ------------------
+      Watchdog Enabled = 1
+      Watchdog Timeout = 15 secs
+
+    BcmAlloc Settings:
+    -----------------
+ 0: Buffer Size (  16) = 500 buffers
+ 1: Buffer Size (  48) = 500 buffers
+ 2: Buffer Size ( 160) = 50 buffers
+ 3: Buffer Size ( 288) = 200 buffers
+ 4: Buffer Size (1536) = 4 buffers
+ 5: Buffer Size (1648) = 30 buffers
+    ------------------   ------------
+    Total (approx) RAM = 149 kbytes
+
++-------------------------+
+|                         |
+| Factory NonVol Settings
++-------------------------+
+               Magic Number = 0x46414354 'FACT'
+        Version (Permanent) = 0.2
+          Version (Dynamic) = 0.1
+     Is Default (Permanent) = 1
+       Is Default (Dynamic) = 0
+Is Manufactured (Permanent) = 1
+  Is Manufactured (Dynamic) = 1
+
+
+Broadcom Factory Extension Permanent NonVol Settings:
+          Private MIB enable: 0
+Temporary MIB enable key allowed: 1
+                Enable Key 0: 
+                Enable Key 1: 
+                Enable Key 2: 
+                Enable Key 3: 
+                Enable Key 4: 
+                Enable Key 5: 
+                Enable Key 6: 
+                Enable Key 7: 
+             Serial Number 0: 
+             Serial Number 1: 
+             Serial Number 2: 
+             Serial Number 3: 
+
+
+Broadcom Factory Extension Dynamic NonVol Settings:
+                 Scratch Pad: 0
+
++------------------------+
+|                        |
+| CM BPI NonVol Settings
++------------------------+
+               Magic Number = 0x62706920 'bpi '
+        Version (Permanent) = 0.1
+          Version (Dynamic) = 0.3
+     Is Default (Permanent) = 1
+       Is Default (Dynamic) = 0
+Is Manufactured (Permanent) = 0
+                    (NOT SET: BPI public key, BPI private key, BPI+ root public key, BPI+ CM certificate, BPI+ CA certificate)
+  Is Manufactured (Dynamic) = 1
+
+BPI Permanent NonVol Settings:  (Values suppressed for brevity)
+
+            BPI Public Key = (0 bytes)
+           BPI Private Key = (0 bytes)
+      BPI+ Root Public Key = (0 bytes)
+       BPI+ CM Certificate = (0 bytes)
+       BPI+ CA Certificate = (0 bytes)
+
+BPI Dynamic NonVol Settings:
+
+    Secure Software Download settings:
+
+       Code Access Start = 
+  30 30 30 31   30 31 30 30   30 30 30 30  | 000101000000
+
+        CVC Access Start = 
+  30 30 30 31   30 31 30 30   30 30 30 30  | 000101000000
+
+   Co-Signing Agent Name = ''
+
+    Upgraded BPI+ Key settings:  (Values suppressed for brevity)
+
+   Root Public Key upgraded = 0
+    CA Certificate upgraded = 0
+   Upgraded Root Public Key = (0 bytes)
+    Upgraded CA Certificate = (0 bytes)
+Upgraded CVC Root CA Certificate = (0 bytes)
+Upgraded CVC CA Certificate = (0 bytes)
+
+
+Extra Dynamic Settings data (stored because of downgrade):
+
+  00 00 00 00   00 00 00 00   00 00 00 00   00 00 00 00  | ................
+
+
++---------------------------+
+|                           |
+| CM DOCSIS NonVol Settings
++---------------------------+
+               Magic Number = 0xd0c20100 '....'
+        Version (Permanent) = 0.4
+          Version (Dynamic) = 0.5
+     Is Default (Permanent) = 1
+       Is Default (Dynamic) = 0
+Is Manufactured (Permanent) = 1
+  Is Manufactured (Dynamic) = 1
+
+DOCSIS Cable Modem Permanent NonVol Settings:
+
+       Scan Single DsChan Enabled = 0
+                      BPI Enabled = 1
+            Concatenation Enabled = 1
+            Fragmentation Enabled = 1
+                      PHS Enabled = 1
+                     IGMP Enabled = 1
+             Rate Shaping Enabled = 1
+      DOCSIS 1.1 Features Enabled = 1
+                     DHCP Enabled = 1
+              Time Of Day Enabled = 1
+         Config File TFTP Enabled = 1
+      Canned Registration Enabled = 0
+         One-line RNG-RSP Enabled = 0
+             Advanced PHY Enabled = 1
+     DOCSIS 2.0 Hack for 1.x CMTS = 0
+ BPI23 (secure s/w dload) Enabled = 1
+Optimized Initial Ranging Enabled = 1
+        Force Config File Enabled = 0
+        AckCel technology Enabled = 1
+     NonStandard Upstream Enabled = 0
+          Channel Bonding Enabled = 1
+          Upstream Queues Enabled = 0 (all queues can be used)
+                      BPI Version = 1
+           Disabled DOCSIS Timers = 0 ({None})
+          Concatenation Threshold = 2 packets
+       Rate Shaping Time Interval = 2 seconds
+               TFTP Retry Timeout = 600 seconds
+                  IP Stack Number = 1
+              Max UGS Queue Depth = 3 packets {deprecated}
+               Max Concat Packets = 128 packets
+      decoy Default Ranging Class = 0x1 {deprecated}
+
+    Max UGS Queue Depth Settings:
+    ----------------------------
+0     0..    32150128 uSec :  32 packets
+1   151..    32250128 uSec :   8 packets
+2   251..    32500128 uSec :   4 packets
+3   501..    3265535128 uSec :   3 packets
+
+Number of DS channels = 8
+
+
+If DHCP is not enabled, then the following settings will be used:
+
+DHCP Settings:
+            My offered IP address = 10.10.10.10
+                      Subnet Mask = 255.255.255.0
+                Router IP address = 10.10.10.254
+           TFTP Server IP address = 10.10.10.254
+            CM Configuration file = 'cm.bin'
+           Time Server IP address = 10.10.10.254
+            Log Server IP address = 10.10.10.254
+
+DOCSIS Cable Modem Dynamic NonVol Settings:
+
+       Downstream Frequency = 858000000 hz
+           Upstream Channel = 1
+             Upstream Power = 207 quarter dBmV (51.75 dBmV)
+ Docsis10IgmpSupportEnabled = 1
+Docsis10IgmpMulticastPromiscEnabled = 0
+      Startup Target DsFreq = 0 hz
+   Startup Target UsChannel = 0
+     Startup Target Context = 0
+    Ranging Class Extension = 0
+              CPE interface = other
+
+
++-------------------------------+
+|                               |
+| CM DOCSIS 3.0 NonVol Settings
++-------------------------------+
+               Magic Number = 0xd0c20300 '....'
+        Version (Permanent) = 0.1
+          Version (Dynamic) = 0.2
+     Is Default (Permanent) = 1
+       Is Default (Dynamic) = 0
+Is Manufactured (Permanent) = 1
+  Is Manufactured (Dynamic) = 1
+
+DOCSIS 3.0 Cable Modem Permanent NonVol Settings:
+
+                                     Override MDD message = 0
+                         Report EAE Cap in B-INIT-RNG-REQ = 1
+                         DS-SG Disc Failure Docs3.0 Rules = 0
+                           Use REG-REQ-MP if MDD detected = 1
+                       Multicast DSID forwarding disabled = 0
+                      Zero byte offset for EAE encryption = 0
+                    Ignore DBC-REQ HMAC mismatch failures = 0
+                      Force Docsis30 in modem capabilites = 0
+                             Indicate No Multi Tx Support = 0
+                     Ignore UCDs embedded in TCC commands = 0
+   Suppress Total Sid cluster modem capability in REG-REQ = 0
+                Use CBC Tek key decryption instead of ECB = 0
+                 Disable Dynamic Rangw Window Enforcement = 0
+
+If 'Override MDD' is enabled, then the following IP provisioning mode will
+be used in place of the IpInitParams TLV, even if an MDD is not present:
+
+                    Provisioning mode = IPv4 only
+
+If DHCP is diasabled, then the following settings will be used:
+
+             Time Server IPv6 address = fec0:a:18:5e:a00:20ff:feb3:cfc2
+             TFTP Server IPv6 address = fec0:a:18:5e:a00:20ff:feb3:cfc2
+
+Last operational tx chan set UCID / Tx Power:
+
+      UCID        Tx Pwr
+      ----   -----------
+         1    36.50 dBmV
+         2    35.50 dBmV
+         3    36.50 dBmV
+         4    36.25 dBmV
+
++-------------------------------------+
+|                                     |
+| CableModem EventLog NonVol Settings
++-------------------------------------+
+               Magic Number = 0x434d4556 'CMEV'
+        Version (Permanent) = 0.1
+          Version (Dynamic) = 0.1
+     Is Default (Permanent) = 1
+       Is Default (Dynamic) = 0
+Is Manufactured (Permanent) = 1
+  Is Manufactured (Dynamic) = 1
+     
+Permanent Settings: 
+
+	(there are no permanent event log settings)
+       
+Dynamic Settings: 
+
+              Capacity = 32 events
+        Next available = 31
+    Event#        Id         Count  FirstTime   LastTime
+    ------  --------------   -----  ---------   --------
+       0        84000100      1108         13        357
+       1      2436694045         4         80         14
+       2        68000300         1        199        199
+       3      2436694044         4        356        117
+       4        84000200       465          9         15
+       5        68000300         1         41         41
+       6        84000100        16         27         83
+       7        82000200        19        778         20
+       8        82000300         1        784        784
+       9        68000300         2        790         23
+      10        84000100         2 1243834435 1243834436
+      11        84000200       140         10         61
+      12        84000100         5         57         12
+      13        68000300         1         67         67
+      14        82000200         7 1245897985 1245897986
+      15        82000200         1         20         20
+      16        68000300         1         23         23
+      17        84000200        98          9        291
+      18        84000100        70         19        297
+      19        82000200         4         72         23
+      20        85000100         4        246        315
+      21        82000200         6        323        355
+      22        84000200         1        368        368
+      23        68000301        12        380        709
+      24        68000100        12        383        772
+      25        84000200         2        569        774
+      26        84000100         3        572        780
+      27        68000301         6        794        918
+      28        68000100         6        797        981
+      29        84000200         1        983        983
+      30        84000100         1        986        986
+      31               0         0          0          0
+Event Text:
+0: SYNC Timing Synchronization failure - Failed to acquire QAM/QPSK symbol timing;CM-MAC=00:10:95:de:ad:01;CMTS-MAC=00:00:00:00:00:00;CM-QOS=1.0;CM-VER=3.0
+1: Resetting the cable modem due to console command
+2: DHCP FAILED - Requested Info not supported.;CM-MAC=00:10:95:de:ad:01;CMTS-MAC=00:00:00:00:00:00;CM-QOS=1.0;CM-VER=3.0
+3: Resetting the cable modem due to docsDevResetNow
+4: SYNC Timing Synchronization failure - Failed to acquire FEC framing;CM-MAC=00:10:95:de:ad:01;CMTS-MAC=00:00:00:00:00:00;CM-QOS=1.0;CM-VER=3.0;
+5: DHCP FAILED - Requested Info not supported.;CM-MAC=00:10:95:de:ad:01;CMTS-MAC=00:00:00:00:00:00;CM-QOS=1.0;CM-VER=3.0;
+6: SYNC Timing Synchronization failure - Failed to acquire QAM/QPSK symbol timing;;CM-MAC=00:10:95:de:ad:01;CMTS-MAC=00:00:00:00:00:00;CM-QOS=1.0;CM-VER=3.0;
+7: No Ranging Response received - T3 time-out;CM-MAC=00:10:95:de:ad:01;CMTS-MAC=00:e0:f7:ff:89:a8;CM-QOS=1.0;CM-VER=3.0;
+8: Ranging Request Retries exhausted;CM-MAC=00:10:95:de:ad:01;CMTS-MAC=00:e0:f7:ff:89:a8;CM-QOS=1.0;CM-VER=3.0;
+9: DHCP FAILED - Requested Info not supported.;CM-MAC=00:10:95:de:ad:01;CMTS-MAC=00:e0:f7:ff:89:a8;CM-QOS=1.0;CM-VER=3.0;
+10: SYNC Timing Synchronization failure - Failed to acquire QAM/QPSK symbol timing;;CM-MAC=00:10:95:de:ad:01;CMTS-MAC=00:e0:f7:ff:89:a8;CM-QOS=1.1;CM-VER=3.0;
+11: SYNC Timing Synchronization failure - Failed to acquire FEC framing;CM-MAC=08:a1:de:40:1a:db;CMTS-MAC=00:00:00:00:00:00;CM-QOS=1.0;CM-VER=3.0;
+12: SYNC Timing Synchronization failure - Failed to acquire QAM/QPSK symbol timing;;CM-MAC=08:a1:de:40:1a:db;CMTS-MAC=00:00:00:00:00:00;CM-QOS=1.0;CM-VER=3.0;
+13: DHCP FAILED - Requested Info not supported.;CM-MAC=08:a1:de:40:1a:db;CMTS-MAC=00:17:10:00:5e:ed;CM-QOS=1.0;CM-VER=3.0;
+14: No Ranging Response received - T3 time-out;CM-MAC=08:a1:de:40:1a:db;CMTS-MAC=00:17:10:00:5e:ed;CM-QOS=1.1;CM-VER=3.0;
+15: No Ranging Response received - T3 time-out;CM-MAC=08:a1:de:40:1a:db;CMTS-MAC=00:30:19:48:39:54;CM-QOS=1.0;CM-VER=3.0;
+16: DHCP FAILED - Requested Info not supported.;CM-MAC=08:a1:de:40:1a:db;CMTS-MAC=00:30:19:48:39:54;CM-QOS=1.0;CM-VER=3.0;
+17: SYNC Timing Synchronization failure - Failed to acquire FEC framing;CM-MAC=00:24:d1:02:22:a8;CMTS-MAC=00:00:00:00:00:00;CM-QOS=1.0;CM-VER=3.0;
+18: SYNC Timing Synchronization failure - Failed to acquire QAM/QPSK symbol timing;;CM-MAC=00:24:d1:02:22:a8;CMTS-MAC=00:00:00:00:00:00;CM-QOS=1.0;CM-VER=3.0;
+19: No Ranging Response received - T3 time-out;CM-MAC=00:24:d1:02:22:a8;CMTS-MAC=00:04:9b:ec:b4:54;CM-QOS=1.0;CM-VER=3.0;
+20: No UCDs Received - Timeout;;CM-MAC=00:24:d1:02:22:a8;CMTS-MAC=00:00:00:00:00:00;CM-QOS=1.0;CM-VER=3.0;
+21: No Ranging Response received - T3 time-out;CM-MAC=00:24:d1:02:22:a8;CMTS-MAC=00:15:f9:2a:37:3e;CM-QOS=1.0;CM-VER=3.0;
+22: SYNC Timing Synchronization failure - Failed to acquire FEC framing;CM-MAC=00:24:d1:02:22:a8;CMTS-MAC=00:15:f9:2a:37:3e;CM-QOS=1.0;CM-VER=3.0;
+23: DHCP FAILED - Response doesn't contain ALL the valid options;CM-MAC=00:24:d1:02:22:a8;CMTS-MAC=00:15:f9:2a:37:3c;CM-QOS=1.0;CM-VER=3.0;
+24: DHCP FAILED - Discover sent, no offer received;CM-MAC=00:24:d1:02:22:a8;CMTS-MAC=00:15:f9:2a:37:3c;CM-QOS=1.0;CM-VER=3.0;
+25: SYNC Timing Synchronization failure - Failed to acquire FEC framing;CM-MAC=00:24:d1:02:22:a8;CMTS-MAC=00:15:f9:2a:37:3c;CM-QOS=1.0;CM-VER=3.0;
+26: SYNC Timing Synchronization failure - Failed to acquire QAM/QPSK symbol timing;;CM-MAC=00:24:d1:02:22:a8;CMTS-MAC=00:15:f9:2a:37:3c;CM-QOS=1.0;CM-VER=3.0;
+27: DHCP FAILED - Response doesn't contain ALL the valid options;CM-MAC=00:24:d1:02:22:a8;CMTS-MAC=00:15:f9:2a:37:3d;CM-QOS=1.0;CM-VER=3.0;
+28: DHCP FAILED - Discover sent, no offer received;CM-MAC=00:24:d1:02:22:a8;CMTS-MAC=00:15:f9:2a:37:3d;CM-QOS=1.0;CM-VER=3.0;
+29: SYNC Timing Synchronization failure - Failed to acquire FEC framing;CM-MAC=00:24:d1:02:22:a8;CMTS-MAC=00:15:f9:2a:37:3d;CM-QOS=1.0;CM-VER=3.0;
+30: SYNC Timing Synchronization failure - Failed to acquire QAM/QPSK symbol timing;;CM-MAC=00:24:d1:02:22:a8;CMTS-MAC=00:15:f9:2a:37:3d;CM-QOS=1.0;CM-VER=3.0;
+31: 
+
++-------------------------+
+|                         |
+| CM SNMP NonVol Settings
++-------------------------+
+               Magic Number = 0x736e6d70 'snmp'
+        Version (Permanent) = 0.4
+          Version (Dynamic) = 0.8
+     Is Default (Permanent) = 1
+       Is Default (Dynamic) = 0
+Is Manufactured (Permanent) = 0
+                    (NOT SET: docsDevSerialNumber)
+  Is Manufactured (Dynamic) = 1
+
+CM SNMP Permanent NonVol Settings:
+
+         AllowConfiguration = 0
+        docsDevSerialNumber = 
+         Max Download Tries = 4
+
+CM SNMP Dynamic NonVol Settings:
+
+                 sysContact = 
+                    sysName = 
+                sysLocation = 
+       docsDevSwAdminStatus = 2 (allowProvisioningUpgrade)
+        docsDevSwOperStatus = 2 (completeFromProvisioning)
+          docsDevSwFilename = ./conf/cm/TCM470/TCM470-AD.02.10-090812-F.bin
+            docsDevSwServer = 10.0.0.1
+   Number of Download tries = 0
+            snmpEngineBoots = 28
+      Rescue image sysDescr = 
+Rescue image docsDevSwCurrentVers = 
+       Rescue image bitmask = 0
+
+CM SNMP Compile-time Settings:
+  ** These are not stored in NV and may not be changed at runtime.
+  ** They must be specified in VendorNonVolDefaults.h
+
+                Vendor Name = Thomson
+                   sysDescr = Thomson DOCSIS Cable Modem <<HW_REV: 1.0; VENDOR: Thomson; BOOTR: 2.3.0; SW_REV: STAD.02.10; MODEL: TCM470>>
+                sysObjectID = 1.3.6.1.4.1.2863.205.43034.470.1.0.173.2.16
+                  sysORID.1 = 1.3.6.1.4.1.2863
+               sysORDescr.1 = Thomson DOCSIS Cable Modem
+                sysServices = 0x4f
+       docsDevSwCurrentVers = STAD.02.10
+
+
++--------------------------------------------------+
+|                                                  |
+| DOCSIS CM Downstream Calibration NonVol Settings
++--------------------------------------------------+
+               Magic Number = 0x446e5374 'DnSt'
+        Version (Permanent) = 2.0
+          Version (Dynamic) = 0.0
+     Is Default (Permanent) = 1
+       Is Default (Dynamic) = 0
+Is Manufactured (Permanent) = 0
+                    (NOT SET: DS calibration)
+  Is Manufactured (Dynamic) = 1
+
+DOCSIS CM Downtream Calibration NonVol Settings for Tuner 0 (SINGLETON):
+
+Permanent Settings:
+        Number of Frequencies = 15
+       Number of Tuner Coeffs = 1
+          Number of IF Coeffs = 2
+        Number of Fine Coeffs = 1
+   Number of Equalizer Coeffs = 1
+        Number of LDAIx Reads = 1
+           Time between reads = 50 ms
+          Master Power Offset = 8.42000e+01 dBmV
+              Tuner Step Size = 1.00000e+00 dBmV
+
+< Offset table values supressed for brevity; use 'offset' command to display >
+
++--------------------------------------------------+
+|                                                  |
+| DOCSIS CM Downstream Calibration NonVol Settings
++--------------------------------------------------+
+               Magic Number = 0x446e5331 'DnS1'
+        Version (Permanent) = 2.0
+          Version (Dynamic) = 0.0
+     Is Default (Permanent) = 1
+       Is Default (Dynamic) = 0
+Is Manufactured (Permanent) = 0
+                    (NOT SET: DS calibration)
+  Is Manufactured (Dynamic) = 1
+
+DOCSIS CM Downtream Calibration NonVol Settings for Tuner 1:
+
+Permanent Settings:
+        Number of Frequencies = 15
+       Number of Tuner Coeffs = 1
+          Number of IF Coeffs = 2
+        Number of Fine Coeffs = 1
+   Number of Equalizer Coeffs = 1
+        Number of LDAIx Reads = 1
+           Time between reads = 50 ms
+          Master Power Offset = 8.42000e+01 dBmV
+              Tuner Step Size = 1.00000e+00 dBmV
+
+< Offset table values supressed for brevity; use 'offset' command to display >
+
++------------------------------------------------+
+|                                                |
+| DOCSIS CM Upstream Calibration NonVol Settings
++------------------------------------------------+
+               Magic Number = 0x55705374 'UpSt'
+        Version (Permanent) = 0.1
+          Version (Dynamic) = 0.0
+     Is Default (Permanent) = 1
+       Is Default (Dynamic) = 0
+Is Manufactured (Permanent) = 1
+  Is Manufactured (Dynamic) = 1
+
+DOCSIS CM Uptream Calibration Permanent NonVol Settings:
+
+        Channel Number = 0
+             Board Rev = 18 (Unknown/Don't Care)
+     Upstream Amp Type = 9 (BCM INTERNAL AMP)
+
+  Control Table Settings:
+           Start Power = 3.0 dBmV
+             End Power = 64.0 dBmV
+            Resolution = 0.25 dBmV
+                Values = {skipped for brevity; they can be printed manually}
+
+  Offset Table Settings:
+       Start Frequency = 5.0 MHz
+         End Frequency = 65.0 MHz
+            Resolution = 1.0 MHz
+                Values = {skipped for brevity; they can be printed manually}
+
++------------------------------------------------+
+|                                                |
+| DOCSIS CM Upstream Calibration NonVol Settings
++------------------------------------------------+
+               Magic Number = 0x55705331 'UpS1'
+        Version (Permanent) = 0.1
+          Version (Dynamic) = 0.0
+     Is Default (Permanent) = 1
+       Is Default (Dynamic) = 0
+Is Manufactured (Permanent) = 1
+  Is Manufactured (Dynamic) = 1
+
+DOCSIS CM Uptream Calibration Permanent NonVol Settings:
+
+        Channel Number = 1
+             Board Rev = 18 (Unknown/Don't Care)
+     Upstream Amp Type = 9 (BCM INTERNAL AMP)
+
+  Control Table Settings:
+           Start Power = 3.0 dBmV
+             End Power = 64.0 dBmV
+            Resolution = 0.25 dBmV
+                Values = {skipped for brevity; they can be printed manually}
+
+  Offset Table Settings:
+       Start Frequency = 5.0 MHz
+         End Frequency = 65.0 MHz
+            Resolution = 1.0 MHz
+                Values = {skipped for brevity; they can be printed manually}
+
++------------------------------------------------+
+|                                                |
+| DOCSIS CM Upstream Calibration NonVol Settings
++------------------------------------------------+
+               Magic Number = 0x55705332 'UpS2'
+        Version (Permanent) = 0.1
+          Version (Dynamic) = 0.0
+     Is Default (Permanent) = 1
+       Is Default (Dynamic) = 0
+Is Manufactured (Permanent) = 1
+  Is Manufactured (Dynamic) = 1
+
+DOCSIS CM Uptream Calibration Permanent NonVol Settings:
+
+        Channel Number = 2
+             Board Rev = 18 (Unknown/Don't Care)
+     Upstream Amp Type = 9 (BCM INTERNAL AMP)
+
+  Control Table Settings:
+           Start Power = 3.0 dBmV
+             End Power = 64.0 dBmV
+            Resolution = 0.25 dBmV
+                Values = {skipped for brevity; they can be printed manually}
+
+  Offset Table Settings:
+       Start Frequency = 5.0 MHz
+         End Frequency = 65.0 MHz
+            Resolution = 1.0 MHz
+                Values = {skipped for brevity; they can be printed manually}
+
++------------------------------------------------+
+|                                                |
+| DOCSIS CM Upstream Calibration NonVol Settings
++------------------------------------------------+
+               Magic Number = 0x55705333 'UpS3'
+        Version (Permanent) = 0.1
+          Version (Dynamic) = 0.0
+     Is Default (Permanent) = 1
+       Is Default (Dynamic) = 0
+Is Manufactured (Permanent) = 1
+  Is Manufactured (Dynamic) = 1
+
+DOCSIS CM Uptream Calibration Permanent NonVol Settings:
+
+        Channel Number = 3
+             Board Rev = 18 (Unknown/Don't Care)
+     Upstream Amp Type = 9 (BCM INTERNAL AMP)
+
+  Control Table Settings:
+           Start Power = 3.0 dBmV
+             End Power = 64.0 dBmV
+            Resolution = 0.25 dBmV
+                Values = {skipped for brevity; they can be printed manually}
+
+  Offset Table Settings:
+       Start Frequency = 5.0 MHz
+         End Frequency = 65.0 MHz
+            Resolution = 1.0 MHz
+                Values = {skipped for brevity; they can be printed manually}
+
++----------------------------+
+|                            |
+| CM Propane NonVol Settings
++----------------------------+
+               Magic Number = 0x5070616e 'Ppan'
+        Version (Permanent) = 0.1
+          Version (Dynamic) = 0.0
+     Is Default (Permanent) = 1
+       Is Default (Dynamic) = 0
+Is Manufactured (Permanent) = 1
+  Is Manufactured (Dynamic) = 1
+
+Propane Cable Modem Permanent NonVol Settings:
+
+                 Propane Enabled = 1
+        Propane Timer P1 Enabled = 1
+        Propane Timer P2 Enabled = 1
+
++-------------------------------+
+|                               |
+| Mini Firewall NonVol Settings
++-------------------------------+
+               Magic Number = 0x6d46574c 'mFWL'
+        Version (Permanent) = 0.1
+          Version (Dynamic) = 0.1
+     Is Default (Permanent) = 1
+       Is Default (Dynamic) = 0
+Is Manufactured (Permanent) = 1
+  Is Manufactured (Dynamic) = 1
+
+Mini Firewall Dynamic NonVol Settings:
+
+                    Enabled = 0
+
++-----------------+
+|                 |
+| Reset Event Log
++-----------------+
+               Magic Number = 0x5253544c 'RSTL'
+        Version (Permanent) = 0.1
+          Version (Dynamic) = 0.1
+     Is Default (Permanent) = 1
+       Is Default (Dynamic) = 0
+Is Manufactured (Permanent) = 1
+  Is Manufactured (Dynamic) = 1
+               Timestamp Event
+               --------- ------------
+Thu Jan 01 00:02:55 1970
+Resetting due to remote console command 'reset'
